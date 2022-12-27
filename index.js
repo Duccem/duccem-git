@@ -40,15 +40,12 @@ inquirer
     },
   ])
   .then(async (answers) => {
-    const emoji = emojis.find(
-      (e) => answers.type.split(" ")[1] === e.description
-    );
+    const emoji = emojis.find((e) => answers.type.includes(e.description));
     console.log(emoji);
     const code = `${answers.project?.toUpperCase() || "TASK"}-${
       answers.number
     }`;
     let title = [code, emoji.code, answers.title];
-    console.log(title);
     await execa("git", [
       "commit",
       "-m",

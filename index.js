@@ -8,7 +8,9 @@ inquirer.registerPrompt("autocomplete", inquirerPrompt);
 inquirer.registerPrompt("max-length", maxLengthPrompt);
 
 const filter = (prompt = "") => {
-  const filtered = emojis.filter((emoji) => emoji.description.includes(prompt));
+  const filtered = emojis.filter((emoji) =>
+    emoji.description.toLowerCase().includes(prompt.toLowerCase())
+  );
   return filtered.map((emoji) => `${emoji.emoji} ${emoji.description}`);
 };
 
@@ -31,15 +33,15 @@ inquirer
       source: (answersSoFar, input) => filter(input),
     },
     {
-      type: "max-length",
       name: "title",
-      description: "Titulo del commit",
+      type: "max-length",
+      message: "Titulo del commit",
       maxLength: 30,
     },
     {
       type: "input",
       name: "description",
-      description: "Descripción del commit",
+      message: "Descripción del commit",
     },
   ])
   .then(async (answers) => {

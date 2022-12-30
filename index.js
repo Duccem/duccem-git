@@ -1,9 +1,11 @@
 import inquirer from "inquirer";
 import { emojis } from "./emojis.js";
 import inquirerPrompt from "inquirer-autocomplete-prompt";
+import maxLengthPrompt from "inquirer-maxlength-input-prompt";
 import { execa } from "execa";
 
 inquirer.registerPrompt("autocomplete", inquirerPrompt);
+inquirer.registerPrompt("max-length", maxLengthPrompt);
 
 const filter = (prompt = "") => {
   const filtered = emojis.filter((emoji) => emoji.description.includes(prompt));
@@ -29,9 +31,10 @@ inquirer
       source: (answersSoFar, input) => filter(input),
     },
     {
-      type: "input",
+      type: "max-length",
       name: "title",
       description: "Titulo del commit",
+      maxLength: 30,
     },
     {
       type: "input",

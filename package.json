@@ -13,6 +13,7 @@
     "chalk": "^5.2.0",
     "execa": "^6.1.0",
     "inquirer": "^9.1.4",
-    "inquirer-autocomplete-prompt": "^3.0.0"
+    "inquirer-autocomplete-prompt": "^3.0.0",
+    "inquirer-maxlength-input-prompt": "^1.0.2"
   }
 }

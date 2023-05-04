@@ -1,5 +1,6 @@
+#!/usr/bin/env node
 import { execa } from 'execa';
-import { promptCommit } from './committer';
+import { promptCommit } from './committer.js';
 
 async function main() {
   if (!process.argv[2]) throw new Error('Not action provided');

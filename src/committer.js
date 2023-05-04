@@ -1,8 +1,8 @@
 import inquirer from 'inquirer';
-const inquirerPrompt = require('inquirer-autocomplete-prompt');
-const maxLengthPrompt = require('inquirer-maxlength-input-prompt');
-import { emojis } from './emojis';
-import { commit } from './prompts/commit';
+import inquirerPrompt from 'inquirer-autocomplete-prompt';
+import maxLengthPrompt from 'inquirer-maxlength-input-prompt';
+import { emojis } from './emojis.js';
+import { commit } from './prompts/commit.js';
 
 inquirer.registerPrompt('autocomplete', inquirerPrompt);
 inquirer.registerPrompt('max-length', maxLengthPrompt);

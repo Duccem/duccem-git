@@ -1,4 +1,4 @@
-export const commit = (filter: any) => [
+export const commit = (filter) => [
   {
     type: 'input',
     name: 'project',
@@ -15,14 +15,14 @@ export const commit = (filter: any) => [
     message: '💚 Change type: ',
     emptyText: 'Nothing found!',
 
-    source: (answersSoFar: any, input: any) => filter(input),
+    source: (answersSoFar, input) => filter(input),
   },
   {
     name: 'title',
     type: 'max-length',
     message: '📄 Commit title: ',
     maxLength: 30,
-    validate(input: any) {
+    validate(input) {
       if (input == '') {
         return 'You must provide a message';
       }

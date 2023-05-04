@@ -1,6 +1,6 @@
 {
-  "name": "ducen-git",
-  "version": "0.1.10",
+  "name": "ducen/ducen-git",
+  "version": "0.1.11",
   "description": "A commit cli tool",
   "main": "lib/index.js",
   "type": "module",
@@ -9,7 +9,9 @@
     "test": "jest --config jest.config.js",
     "start": "node ./src/index.js"
   },
-  "bin": "./src/index.js",
+  "bin": {
+    "ducen-git": "./src/index.js"
+  },
   "author": "duccem29",
   "license": "ISC",
   "dependencies": {

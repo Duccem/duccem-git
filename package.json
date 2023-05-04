@@ -1,19 +1,45 @@
 {
-  "name": "committer",
-  "version": "0.0.0",
+  "name": "@duccem29/ducen-git",
+  "version": "0.1.0",
   "description": "A commit cli tool",
-  "main": "index.js",
+  "main": "lib/index.js",
   "type": "module",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -p tsconfig.json",
+    "test": "jest --config jest.config.js"
   },
-  "author": "",
+  "author": "duccem29",
   "license": "ISC",
   "dependencies": {
     "chalk": "^5.2.0",
     "execa": "^6.1.0",
     "inquirer": "^9.1.4",
     "inquirer-autocomplete-prompt": "^3.0.0",
-    "inquirer-maxlength-input-prompt": "^1.0.2"
+    "inquirer-maxlength-input-prompt": "^1.0.2",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.3",
+    "@types/jest": "^29.5.1",
+    "@types/node": "^18.16.2",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Duccem/committer.git"
+  },
+  "homepage": "https://github.com/Duccem/committer#readme",
+  "bugs": {
+    "url": "https://github.com/Duccem/committer/issues"
+  },
+  "keywords": [
+    "Git",
+    "CLI",
+    "Typescript"
+  ],
+  "directories": {
+    "test": "test"
   }
 }

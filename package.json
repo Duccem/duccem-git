@@ -1,5 +1,5 @@
 {
-  "name": "@duccem29/ducen-git",
+  "name": "@duccem/ducen-git",
   "version": "0.1.11",
   "description": "A commit cli tool",
   "main": "lib/index.js",
@@ -12,7 +12,7 @@
   "bin": {
     "ducen-git": "./src/index.js"
   },
-  "author": "duccem29",
+  "author": "duccem",
   "license": "ISC",
   "dependencies": {
     "chalk": "^5.2.0",

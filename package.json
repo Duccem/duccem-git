@@ -1,6 +1,6 @@
 {
   "name": "ducen-git",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "A commit cli tool",
   "main": "lib/index.js",
   "type": "module",

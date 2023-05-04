@@ -26,11 +26,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Duccem/committer.git"
+    "url": "git+https://github.com/Duccem/duccem-git.git"
   },
-  "homepage": "https://github.com/Duccem/committer#readme",
+  "homepage": "https://github.com/Duccem/duccem-git#readme",
   "bugs": {
-    "url": "https://github.com/Duccem/committer/issues"
+    "url": "https://github.com/Duccem/duccem-git/issues"
   },
   "keywords": [
     "Git",

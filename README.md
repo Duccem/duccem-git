@@ -1,11 +1,11 @@
-# Committer 
+# Duccem-git 
 
 A little CLI tool to make more easy semantics commits
 
 ## Installation
 
 ```bash
- $ npm install -g ducen-git
+ $ npm install -g duccem-git
 ```
 
 ## Commands
@@ -20,15 +20,15 @@ A little CLI tool to make more easy semantics commits
 
 ### Add to staging
 ```bash
-$ ducen-git -a
+$ duccem-git -a
 ```
 
 ### Commit with message
 ```bash
-$ ducen-git -c
+$ duccem-git -c
 ```
 
 ### Commit amend
 ```bash
-$ ducen-git -ca
+$ duccem-git -ca
 ```

@@ -14,7 +14,7 @@ A little CLI tool to make more easy semantics commits
 | --------|----------------------|------------------------------|
 | commit  | -c --commit          | Make a commit with a message |
 | add     | -a --add             | Add to the staging           |
-| amend   | -ca ----commit-amend | Make commit to amend         |
+| amend   | -ca --commit-amend   | Make commit to amend         |
 
 ## Usage 
 

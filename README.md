@@ -5,7 +5,7 @@ A little CLI tool to make more easy semantics commits
 ## Installation
 
 ```bash
- $ npm install -g committer
+ $ npm install -g ducen-git
 ```
 
 ## Commands
@@ -20,15 +20,15 @@ A little CLI tool to make more easy semantics commits
 
 ### Add to staging
 ```bash
-$ committer -a
+$ ducen-git -a
 ```
 
 ### Commit with message
 ```bash
-$ committer -c
+$ ducen-git -c
 ```
 
 ### Commit amend
 ```bash
-$ committer -ca
+$ ducen-git -ca
 ```

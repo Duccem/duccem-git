@@ -1,5 +1,5 @@
 {
-  "name": "@ducen/ducen-git",
+  "name": "@duccem29/ducen-git",
   "version": "0.1.11",
   "description": "A commit cli tool",
   "main": "lib/index.js",

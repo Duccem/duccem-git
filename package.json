@@ -1,6 +1,6 @@
 {
   "name": "@duccem/duccem-git",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "A commit cli tool",
   "main": "lib/index.js",
   "type": "module",

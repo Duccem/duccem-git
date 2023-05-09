@@ -10,7 +10,8 @@
     "start": "node ./src/index.js"
   },
   "bin": {
-    "duccem-git": "./src/index.js"
+    "duccem-git": "./src/index.js",
+    "dcgit": "./src/index.js"
   },
   "author": "duccem",
   "license": "ISC",

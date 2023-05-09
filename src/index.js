@@ -3,8 +3,9 @@ import { execa } from 'execa';
 import { promptCommit } from './committer.js';
 
 async function main() {
-  if (!process.argv[2]) throw new Error('Not action provided');
-  switch (process.argv[2]) {
+  let flag = process.argv[2];
+  if (!flag) flag = '-c';
+  switch (flag) {
     case '-a' || '--add':
       execa('git', ['add', '.']);
       break;
@@ -14,6 +15,9 @@ async function main() {
       break;
     case '-ca' || '--commit-amend':
       execa('git', ['commit', '--amend', '--no-edit']);
+      break;
+    case '-p' || '--push':
+      execa('git', ['push', '--force']);
     default:
       break;
   }

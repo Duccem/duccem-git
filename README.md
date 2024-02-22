@@ -5,7 +5,7 @@ A little CLI tool to make more easy semantics commits
 ## Installation
 
 ```bash
- $ npm install -g duccem-git
+ $ npm install -g @duccem/duccem-git
 ```
 
 ## Commands
